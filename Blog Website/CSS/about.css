@@ -32,7 +32,7 @@ body{
     line-height: 1.5rem;
 }
 
-.avatar-img{
+.bio-section .avatar-img{
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -81,7 +81,7 @@ body{
         font-size: 3rem;
     }
 
-    .avatar-img{
+    .bio-section .avatar-img{
         grid-column: 2/3;
         height: 300px;
         width: 300px;
