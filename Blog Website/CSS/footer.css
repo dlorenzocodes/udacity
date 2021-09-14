@@ -16,6 +16,11 @@
     fill: #464444;
 }
 
+footer .attr{
+    text-align: center;
+    font-size: 0.7rem;
+}
+
 @media screen and (min-width: 64em){
     footer{
         padding: 2rem;
