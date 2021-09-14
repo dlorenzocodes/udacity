@@ -1,0 +1,169 @@
+@import url('nav.css');
+@import url('form.css');
+@import url('footer.css');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 0.075rem;
+    font-weight: 400;
+}
+
+h2{
+    margin-top: 1.75rem;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+span{
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    display: block;
+}
+
+.current-blog,
+.archive-blogs,
+.about-section{
+    padding: 3rem 2rem;
+}
+
+.img{
+    height: 208px;
+}
+
+.main-img-1{
+    background-image: url('/images/francesco-ungaro-4zRgK7nVtrc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1rem;
+}
+
+.main-img-2{
+    background-image: url('/images/loo-cypher-UJr_TCSObWY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1.75rem 0;
+}
+
+.paragraphs,
+.blog-card p{
+    padding-top: 1rem;
+}
+
+.paragraphs,
+.last-paragraph,
+.blog-card p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+/* SIDEBAR CONTENT */
+
+.archive-blogs h2,
+.about-section h2{
+    margin: 0;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 1.25rem;
+}
+
+.about-section p{
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+.blog-card{
+    margin-top: 1.625rem;
+}
+
+.blog-card h3{
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.blog-card a{
+    cursor: pointer;
+    color: #000;
+    text-decoration: underline;
+}
+
+.blog-card span{
+    margin-top: 0.8rem;
+}
+
+.blog-card-img-1{
+    height: 137px;
+    background-image: url('/images/james-padolsey--ti35UoaEIE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.blog-card-img-2{
+    height: 137px;
+    background-image: url('/images/alejandro-trinidad-18SoVrFOVe8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    background-image: url('/images/maxwell-dacombe-fYVZ40OmMVo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.about-section button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin: 2rem auto;
+    border: 1px solid rgba(0,0,0, 0.5);
+    padding: 0.5rem 1.5rem;
+    transition: color 1s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.about-section button > svg{
+    height: 12px;
+    width: 12px;
+    margin-left: 0.5rem;
+}
+
+.about-section button > a{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.about-section button:hover{
+    background-color: #000;
+}
+
+
+.about-section button:hover > svg{
+    fill: #fff
+}
+
+
+.about-section button:hover > a{
+    color: #fff;
+}

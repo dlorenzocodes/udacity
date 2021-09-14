@@ -1,0 +1,149 @@
+@import url('nav.css');
+@import url('form.css');
+@import url('footer.css');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.archive-blogs{
+    padding: 3rem 2rem;
+}
+
+.archive-blogs h2{
+    margin: 0;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 1.25rem;
+}
+
+.blog-card{
+    margin-top: 1.625rem;
+}
+
+.blog-card p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.blog-card h3{
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.blog-card a{
+    cursor: pointer;
+    color: #000;
+    text-decoration: underline;
+}
+
+.blog-card span{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.blog-card-img-1{
+    height: 137px;
+    background-image: url('/images/francesco-ungaro-4zRgK7nVtrc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.blog-card-img-2{
+    height: 137px;
+    background-image: url('/images/james-padolsey--ti35UoaEIE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.blog-card-img-3{
+    height: 137px;
+    background-image: url('/images/alejandro-trinidad-18SoVrFOVe8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Media Queries ----------------------------- */
+
+@media screen and (min-width: 31.25em) and (max-width: 47.9375em){
+
+    .blog-card-img-1,
+    .blog-card-img-2,
+    .blog-card-img-3{
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 48em){
+    .archive-blogs{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .blog-card h3{
+        font-size: 1.3rem;
+        margin-top: 3rem;
+    }
+
+    .blog-card p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .blog-card span{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .blog-card{
+        margin-top: 3.5rem;
+    }
+
+    .blog-card .blog-card-img-1,
+    .blog-card .blog-card-img-2,
+    .blog-card .blog-card-img-3{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 64em){
+
+    .archive-blogs{
+        padding: 6rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr;
+        grid-gap: 20px;
+    }
+
+    .archive-blogs h2{
+        margin: 0;
+        grid-column: 1/4;
+        font-family: 'Homemade Apple', cursive;
+        text-align: center;
+        text-transform: lowercase;
+        font-size: 2.25rem;
+    }
+
+    .blog-card{
+        margin-top: 0;
+    }
+
+    .blog-card .blog-card-img-3{
+        background-position: 50%;
+    }
+}
+
+@media screen and (min-width: 81.25em){
+    .archive-blogs{
+        padding: 6rem 0;
+        grid-gap: 80px;
+    }
+}

@@ -1,0 +1,29 @@
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.social-links svg{
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+}
+
+.social-links svg:hover{
+    fill: #464444;
+}
+
+@media screen and (min-width: 64em){
+    footer{
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 81.25em){
+    footer{
+        padding: 1rem 0;
+    }
+}

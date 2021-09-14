@@ -1,0 +1,111 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navegation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.8125rem 2rem;
+}
+
+.logo{
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    width: 80%;
+}
+
+.nav-wrapper{
+    list-style: none;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav li{
+    list-style: none;
+    padding-bottom: 0.25rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.open-menu{
+    width: 33px;
+    height: 33px;
+}
+
+#btnControl{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#btnControl:checked + label ~ .nav-wrapper{
+   display: flex;
+}
+
+.ruler{
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    background-color: #000;
+    height: 1px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 28.125rem){
+    .nav-wrapper{
+        padding-top: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 48em){
+
+    .navegation{
+        flex-wrap: nowrap;
+        padding: 3rem;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    label{
+        display: none;
+    }
+
+    .nav-wrapper{
+        display: flex;
+    }
+
+    .nav-wrapper .nav{
+        display: flex;
+    }
+
+    .nav li:not(:last-child){
+        margin-right: 1.5rem;
+    }
+
+    .nav li:hover{
+        border-bottom: 1px solid #000;
+    }
+
+    .ruler{
+        width: calc(100% - 4rem);
+    }
+}
