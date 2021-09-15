@@ -105,4 +105,8 @@ figcaption{
         font-size: 1rem;
         padding-top: 0;
     }
+
+    figcaption{
+        padding-bottom: 3.8rem;
+    }
 }
