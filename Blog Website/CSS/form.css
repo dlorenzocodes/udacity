@@ -48,6 +48,7 @@ form button > svg{
     height: 12px;
     width: 12px;
     margin-left: 0.5rem;
+    enable-background:new 0 0 476.213 476.213;
 }
 
 @media screen and (min-width: 48em){

@@ -11,6 +11,12 @@ body{
     flex-direction: column;
 }
 
+figcaption{
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
 .content-wrapper{
     flex: 1 0 auto;
 }

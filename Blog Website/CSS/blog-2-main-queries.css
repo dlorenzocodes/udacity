@@ -54,6 +54,10 @@
         margin-top: 0.8rem;
     }
 
+    figcaption{
+        font-size: 1rem;
+    }
+
     .paragraphs,
     .last-paragraph,
     .blog-card p,

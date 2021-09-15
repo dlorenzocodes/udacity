@@ -30,6 +30,7 @@ span{
     display: block;
 }
 
+
 .current-blog,
 .archive-blogs,
 .about-section{
@@ -52,7 +53,16 @@ span{
     background-image: url('/images/loo-cypher-UJr_TCSObWY-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 1.75rem 0;
+    margin: 1.75rem 0 0;
+}
+
+figcaption{
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+#second-caption{
+    margin-bottom: 1.75rem;
 }
 
 .paragraphs,

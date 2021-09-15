@@ -51,7 +51,16 @@ span{
     background-image: url('/images/loo-cypher-UJr_TCSObWY-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 1.75rem 0;
+    margin: 1.75rem 0 0;
+}
+
+#second-caption{
+    margin-bottom: 1.75rem;
+}
+
+figcaption{
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
 }
 
 .paragraphs,
@@ -146,6 +155,7 @@ span{
     height: 12px;
     width: 12px;
     margin-left: 0.5rem;
+    enable-background:new 0 0 476.213 476.213;
 }
 
 .about-section button > a{
