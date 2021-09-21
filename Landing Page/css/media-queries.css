@@ -1,0 +1,109 @@
+@import url('style.css');
+
+@media screen and (min-width: 48rem){
+
+    header{
+        padding: 2rem 5rem;
+    }
+
+    .logo{
+        width: 23%;
+    }
+    
+    .main-nav{
+        width: 28%;
+        top: 16.9vh;
+        left: 54vh;
+        transform: translateX(100%);
+    }
+
+    .nav-links li > a{
+        padding-top: 0.8rem;
+        font-size: 1.5rem;
+    }
+
+    .nav-links img{
+        width: 30%;
+    }
+
+    /* HERO SECTION */
+
+    .hero-section{
+        margin-top: 10rem;
+    }
+
+    .hero-section img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-section h1{
+        padding: 0.5rem 0;
+        font-size: 2.5rem;
+    }
+
+    .hero-section button{
+        font-size: 1.2rem;
+        width: 30%;
+    }
+
+    /* SECTION STYLES */
+
+    section h2{
+        font-size: 1.4rem;
+    }
+
+    .landing-container{
+        padding: 5rem;
+    }
+
+    .card p{
+        padding: 2rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    .img-container{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about-info{
+        flex-direction: row;
+    }
+
+    .about-info img{
+        width: 35%;
+    }
+
+    .about-info p{
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    #Contact h2{
+        margin: 2rem 0;
+    }
+
+    label{
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+
+    input,
+    textarea{
+        padding: 1rem;
+    }
+
+    input[type="submit"]{
+        margin: 4rem auto 2rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+
+    footer{
+        padding: 3rem;
+        font-size: 1rem;
+    }
+}
