@@ -1,6 +1,9 @@
 @import url('style.css');
 
-@media screen and (min-width: 48rem){
+
+/* ---------------------------------------- */
+
+@media screen and (min-width: 48em){
 
     header{
         padding: 2rem 5rem;
@@ -13,7 +16,6 @@
     .main-nav{
         width: 28%;
         top: 16.9vh;
-        left: 54vh;
         transform: translateX(100%);
     }
 
@@ -28,9 +30,9 @@
 
     /* HERO SECTION */
 
-    .hero-section{
+    /* .hero-section{
         margin-top: 10rem;
-    }
+    } */
 
     .hero-section img{
         width: 80%;
@@ -100,6 +102,15 @@
         font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: .1rem;
+    }
+
+    .top-btn{
+        right: 2rem;
+        bottom: 4rem;
+    }
+
+    #scrollToTop{
+        padding: 1rem;
     }
 
     footer{
