@@ -25,7 +25,7 @@ const heroSection =document.querySelector('.hero-section');
 
 
 
-// Event listens from document to load and runs makeActive function
+// Event listens for document to load and runs makeActive function
 document.addEventListener('DOMContentLoad', makeActive);
 
 
@@ -40,6 +40,7 @@ function createNav() {
     const navUl = document.createElement('ul');
     navUl.setAttribute('class', 'nav-links');
 
+    // loops thru sections, creates elements, appends to DOM
     for(let i = 0; i < sections.length; i++){
         const sectionId = sections[i].getAttribute('id');
         const navLi = document.createElement('li');
@@ -192,22 +193,32 @@ cancelMenu.addEventListener('click', () => {
 });
 
 
-
-window.addEventListener('resize', () => {
+/*
+	* @description: adds main element hight dynamically
+	* @param {} 
+	* @return {} 
+*/
+function setMainHeight(){
     const header = document.querySelector('header');
     const height = header.offsetHeight;
-
-    console.log(height);
     mainContainer.style.paddingTop = height + 'px';
-});
+}
 
-window.addEventListener('load', () => {
-    const header = document.querySelector('header');
-    const height = header.offsetHeight;
+window.addEventListener('resize', setMainHeight);
+window.addEventListener('load', setMainHeight);
 
-    console.log(height);
-    mainContainer.style.paddingTop = height + 'px';
-});
+
+// Sets top value of main-nav element depending on viewport width
+function setmainNavHeight(){
+    if(window.innerWidth <= 823) {
+        const header = document.querySelector('header');
+        const height = header.offsetHeight;
+        mainNav.style.top = height + 'px';
+       }
+}
+
+window.addEventListener('resize', setmainNavHeight);
+window.addEventListener('load', setmainNavHeight);
 
 
 

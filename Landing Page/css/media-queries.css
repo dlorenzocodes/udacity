@@ -15,17 +15,16 @@
     
     .main-nav{
         width: 28%;
-        top: 16.9vh;
         transform: translateX(100%);
     }
 
     .nav-links li > a{
         padding-top: 0.8rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .nav-links img{
-        width: 30%;
+        width: 22%;
     }
 
     /* HERO SECTION */

@@ -76,7 +76,6 @@ header{
 
 .main-nav{
     position: fixed;
-    top: 16.8vh;
     right: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
@@ -94,6 +93,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+
+.nav-links li:hover{
+    transform: scale(0.9);
 }
 
 .nav-links li > a{
@@ -138,6 +143,13 @@ header{
     color: #fff;
     letter-spacing: 0.05rem;
     margin: 2rem auto;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+
+.hero-section button:hover{
+    background-color: #fff;
+    color: #F19E97;
 }
 
 /* Sections Styles */
@@ -223,7 +235,14 @@ input[type="submit"]{
     margin: 2rem auto;
     width: 50%;
     border: 1px solid #fff;
+    cursor: pointer;
 }
+
+input[type="submit"]:hover{
+    background-color: #fff;
+    color: #F19E97;
+}
+
 
 /* To Top Button */
 
